@@ -1,0 +1,288 @@
+:root {
+  --first-color: #00b289;
+  --dark-color: #4c4d5f;
+  --white-color: #fff;
+  --bg-color: #fff;
+  --accent-color: #f8db62;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  color: var(--dark-color);
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+}
+body::after{
+  position: absolute;
+  content: '';
+  width: 50vw;
+  height: 140vh;
+  background-color: #F3FBFF;
+  top: -50vh;
+  left: 50%;
+  z-index: -10;
+  transform: rotate(-30deg);
+}
+.container {
+  width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/************************/
+/* Header NavBar */
+/************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.8rem;
+  max-width: 130rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+
+.logo:link,
+.logo:visited {
+  font-family: "Federo", sans-serif;
+  font-size: 4.8rem;
+  color: var(--first-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.logo:hover,
+.logo:active {
+  border-bottom: 2px solid var(--first-color);
+}
+
+.middle-nav {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.middle-link:link,
+.middle-link:visited {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.nav-btns {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.3px;
+  color: var(--first-color);
+  padding: 1.2rem 2.8rem;
+  border: 2px solid var(--first-color);
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--white-color);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-cta:link,
+.btn-cta:visited {
+  color: var(--white-color);
+  background-color: var(--first-color);
+  padding: 1.2rem 3.6rem;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+  background-color: #008e6e;
+}
+
+/************************/
+/* Price plans */
+/************************/
+
+/*---- Price header */
+
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.heading-sencondary {
+  font-family: "Sorts Mill Goudy", serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+
+.switching-plan {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.plan-type {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.switch {
+  appearance: none;
+  position: relative;
+  width: 5.2rem;
+  height: 3rem;
+  border-radius: 2.5rem;
+  background-color: var(--first-color);
+  transition: all 0.3s;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.07);
+}
+
+.switch::after {
+  background-color: var(--white-color);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  transition: left 0.3s;
+}
+
+.switch:checked::after {
+  left: 72%;
+}
+
+/*---- Price card */
+
+.plan-card {
+  background-color: var(--white-color);
+  padding: 5.6rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  box-shadow: 0 2.4rem 3.6rem rgba(0, 0, 0, 0.05);
+}
+
+.plan-name {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 3.6rem;
+}
+
+.price {
+  font-size: 8.6rem;
+  font-weight: 500;
+  display: none;
+  gap: 2.4rem;
+  line-height: 0.7;
+}
+
+.price.show {
+  display: flex;
+}
+
+.money {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+.per {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  font-weight: 400;
+  align-self: flex-end;
+}
+
+.plan-divider {
+  height: 2px;
+  width: 100%;
+  background-color: var(--first-color);
+  margin: 3.6rem 0;
+}
+
+.benefits-plan {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 3.6rem;
+}
+
+.benefits-plan li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.new {
+  font-size: 1.2rem;
+  padding: 0.3rem 0.6rem;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.btn.btn-plan {
+  width: 100%;
+  text-align: center;
+  padding: 2.4rem 0;
+  font-size: 1.8rem;
+}
+
+.best-plan::after {
+  content: "MOST POPULAR";
+  color: var(--white-color);
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 56px;
+  right: -70px;
+  background-color: var(--first-color);
+  padding: 1.2rem 6.4rem;
+  transform: rotate(45deg);
+}
