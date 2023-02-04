@@ -18,15 +18,15 @@ html {
 body {
   font-size: 1.8rem;
   color: var(--dark-color);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--bg-color);
 }
-body::after{
+body::after {
   position: absolute;
   content: '';
   width: 50vw;
   height: 140vh;
-  background-color: #F3FBFF;
+  background-color: #f3fbff;
   top: -50vh;
   left: 50%;
   z-index: -10;
@@ -70,7 +70,7 @@ body::after{
 
 .logo:link,
 .logo:visited {
-  font-family: "Federo", sans-serif;
+  font-family: 'Federo', sans-serif;
   font-size: 4.8rem;
   color: var(--first-color);
   text-decoration: none;
@@ -151,7 +151,7 @@ body::after{
 }
 
 .heading-sencondary {
-  font-family: "Sorts Mill Goudy", serif;
+  font-family: 'Sorts Mill Goudy', serif;
   font-weight: 400;
   font-size: 3.6rem;
 }
@@ -182,10 +182,10 @@ body::after{
 
 .switch::after {
   background-color: var(--white-color);
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 29%;
   transform: translate(-50%, -50%);
   height: 2.6rem;
   width: 2.6rem;
@@ -194,7 +194,7 @@ body::after{
 }
 
 .switch:checked::after {
-  left: 72%;
+  left: 71%;
 }
 
 /*---- Price card */
@@ -207,6 +207,7 @@ body::after{
   border: 1px solid #ccc;
   border-radius: 0.4rem;
   box-shadow: 0 2.4rem 3.6rem rgba(0, 0, 0, 0.05);
+  margin-bottom: 9.6rem;
 }
 
 .plan-name {
@@ -275,7 +276,7 @@ body::after{
 }
 
 .best-plan::after {
-  content: "MOST POPULAR";
+  content: 'MOST POPULAR';
   color: var(--white-color);
   font-weight: 700;
   letter-spacing: 2px;
@@ -285,4 +286,66 @@ body::after{
   background-color: var(--first-color);
   padding: 1.2rem 6.4rem;
   transform: rotate(45deg);
+}
+/* **************** */
+/* COMPLEMENTS */
+/* **************** */
+
+.heading-complements {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.complement {
+  padding: 4.8rem;
+  box-shadow: 0 1.2rem 4.8rem 2.4rem rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.2rem;
+  border-radius: 0.8rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-complement {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom: 0.8rem;
+}
+
+.text-complement {
+  color: #999;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.cost-complement {
+  font-size: 3.6rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time-complement {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.link-more:link,
+.link-more:visited {
+  text-decoration: none;
+  color: var(--first-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: fit-content;
+}
+
+.link-more:hover,
+.link-more:active{
+  border-bottom: 1px solid var(--first-color);
 }
