@@ -1,0 +1,113 @@
+:root {
+  --first-color: #00b289;
+  --dark-color: #4c4d5f;
+  --white-color: #fff;
+  --bg-color: #fff;
+  --accent-color: #f8db62;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  color: var();
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+}
+body::after {
+  position: absolute;
+  content: '';
+  width: 50vw;
+  height: 140vh;
+  background-color: #f3fbff;
+  top: -50vh;
+  left: 50%;
+  z-index: -10;
+  transform: rotate(-30deg);
+}
+.container {
+  width: 120rem;
+  margin: 4.8rem auto;
+  padding: 0 2.4rem;
+}
+
+.accent{
+  color: var(--first-color);
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  gap: 4.8rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* BUTTONS */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.3px;
+  color: var(--first-color);
+  padding: 1.2rem 2.8rem;
+  border: 2px solid var(--first-color);
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+  height: fit-content;
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--white-color);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-cta:link,
+.btn-cta:visited {
+  color: var(--white-color);
+  background-color: var(--first-color);
+  padding: 1.2rem 3.6rem;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+  background-color: #008e6e;
+}
+
+/* HEADING */
+
+.heading-sencondary {
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+
+.heading-tertiary{
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+

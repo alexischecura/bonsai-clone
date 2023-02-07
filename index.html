@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Federo&family=Inter:wght@400;500;700&family=Sorts+Mill+Goudy&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Federo&family=Inter:wght@400;500;600;700&family=Sorts+Mill+Goudy&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Bonsai</title>
@@ -49,7 +49,7 @@
           <div class="switching-plan">
             <span class="plan-type">Monthly</span>
             <input type="checkbox" class="switch" />
-            <span class="plan-type">Yearly</span>
+            <span class="plan-type accent">Yearly</span>
           </div>
         </div>
         <div class="container grid grid--2-cols price-cards">
@@ -151,48 +151,247 @@
         </div>
       </section>
       <section class="container complements">
-        <h2 class="heading-sencondary heading-complements">Super charge your work with add-ons</h2>
-          <div class="complement">
-            <div>
-              <p class="header-complement">Collaborators</p>
-              <p class="text-complement">
-                Invite other usert to specific project for limited access and
-                functionality
-              </p>
-            </div>
-            <p class="cost-complement">Free</p>
-          </div>
-          <div class="complement">
-            <div>
-              <p class="header-complement">Partners</p>
-              <p class="text-complement">
-                Invite other usert for full account access and compny management
-              </p>
-            </div>
-            <p class="cost-complement">
-              <span class="price-complement">$9</span>
-              <span class="time-complement">/Month</span>
+        <h3 class="heading-tertiary heading-complements">
+          Super charge your work with add-ons
+        </h3>
+        <div class="complement">
+          <div>
+            <p class="header-complement">Collaborators</p>
+            <p class="text-complement">
+              Invite other usert to specific project for limited access and
+              functionality
             </p>
           </div>
-          <div class="complement">
-            <div>
-              <p class="header-complement">Bonsai Tax</p>
-              <p class="text-complement">
-                Track expenses, identify write-offs, and estimate quartery taxes
-                easily
-              </p>
-              <a class="link-more" href="#">
-                <span>Learn More</span>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-              </a>
-            </div>
-            <p class="cost-complement">
-              <span class="price-complement">$10</span>
-              <span class="time-complement">/Month</span>
+          <p class="cost-complement">Free</p>
+        </div>
+        <div class="complement">
+          <div>
+            <p class="header-complement">Partners</p>
+            <p class="text-complement">
+              Invite other usert for full account access and compny management
             </p>
           </div>
+          <p class="cost-complement">
+            <span class="price-complement">$9</span>
+            <span class="time-complement">/Month</span>
+          </p>
+        </div>
+        <div class="complement">
+          <div>
+            <p class="header-complement">Bonsai Tax</p>
+            <p class="text-complement">
+              Track expenses, identify write-offs, and estimate quartery taxes
+              easily
+            </p>
+            <a class="link-more" href="#">
+              <span>Learn More</span>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <p class="cost-complement">
+            <span class="price-complement">$10</span>
+            <span class="time-complement">/Month</span>
+          </p>
+        </div>
+      </section>
+      <section class="container">
+        <div class="help">
+          <h2 class="heading-sencondary heading-help">
+            It's <span class="accent">your</span> business.<br />
+            We're here to help it grow.
+          </h2>
+          <a class="btn btn-cta btn-help" href="#">START FREE</a>
+        </div>
+      </section>
+      <section class="faq-section">
+        <h2 class="heading-faq">Frequently Asked Question</h2>
+        <div class="faq">
+          <div class="faq-question">
+            <p class="question">How does the 14 day free trial work?</p>
+            <ion-icon class="faq-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="faq-content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              sint nihil rerum, ea iure, numquam eos quidem mollitia
+              consequuntur itaque, molestias officia adipisci temporibus tempora
+              aut. Minima veniam voluptatem sit facere explicabo perferendis
+              aliquid, inventore neque cupiditate fuga! Earum tenetur vitae
+              perferendis harum, est dolorem ratione voluptatibus a distinctio
+              at.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="faq-question">
+            <p class="question">Can I change plans anytime</p>
+            <ion-icon class="faq-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="faq-content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              sint nihil rerum, ea iure, numquam eos quidem mollitia
+              consequuntur itaque, molestias officia adipisci temporibus tempora
+              aut. Minima veniam voluptatem sit facere.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="faq-question">
+            <p class="question">How do I pause my Bonsai subscription?</p>
+            <ion-icon class="faq-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="faq-content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              sint nihil rerum, ea iure, numquam eos quidem mollitia
+              consequuntur itaque, molestias officia adipisci temporibus tempora
+              aut. Minima veniam voluptatem sit facere explicabo.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="faq-question">
+            <p class="question">What is your refund policy?</p>
+            <ion-icon class="faq-icon" name="chevron-down-outline"></ion-icon>
+          </div>
+          <div class="faq-content hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              sint nihil rerum, ea iure, numquam eos quidem mollitia
+              consequuntur itaque, molestias officia adipisci temporibus tempora
+              aut. Minima veniam voluptatem sit facere explicabo perferendis
+              aliquid, inventore neque cupiditate fuga! Earum tenetur vitae
+              perferendis harum, est dolorem ratione voluptatibus a distinctio
+              at.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="footer container grid grid--3-cols">
+      <div class="product">
+        <p class="footer-title">PRODUCT</p>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">Proposals</a></li>
+          <li><a class="footer-link" href="#">Contracts</a></li>
+          <li><a class="footer-link" href="#">Invoicing</a></li>
+          <li><a class="footer-link" href="#">Client CRM</a></li>
+          <li><a class="footer-link" href="#">Time Tracking</a></li>
+          <li><a class="footer-link" href="#">Task Tracking</a></li>
+          <li><a class="footer-link" href="#">Forms</a></li>
+          <li><a class="footer-link" href="#">Accounting</a></li>
+          <li><a class="footer-link" href="#">Bonsai Tax</a></li>
+          <li><a class="footer-link" href="#">Bonsai Cash</a></li>
+        </ul>
+        <p class="footer-subtitle">Pricing</p>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="">Bonsai Reviews</a></li>
+        </ul>
+      </div>
+      <div class="free-resources">
+        <p class="footer-title">FREE RESOURCES</p>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">Freelance Resources</a></li>
+          <li><a class="footer-link" href="#">Freelance Blog by Bonsai</a></li>
+          <li><a class="footer-link" href="#">How to Write a Contract</a></li>
+          <li><a class="footer-link" href="#">Online Signature Maker</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">Self-Employed Taxes Hub</a></li>
+          <li>
+            <a class="footer-link" href="#">Self-Employed Tax Calculator</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Self-Employed Tax Deductions</a>
+          </li>
+        </ul>
+        <p class="footer-subtitle templates">Templates</p>
+        <ul class="footer-list">
+          <li>
+            <a class="footer-link" href="#">
+              <span>Invoice Templates</span>
+              <ion-icon class="footer-icon" name="chevron-down-outline">
+              </ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <span>Proposal templates</span>
+              <ion-icon
+                class="footer-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <span>Contract Templates</span>
+              <ion-icon
+                class="footer-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <span>Agreement Templates</span>
+              <ion-icon
+                class="footer-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <span>Scope of Work Templates</span>
+              <ion-icon
+                class="footer-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <span>Quote Templates</span>
+              <ion-icon
+                class="footer-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </a>
+          </li>
+          <li><a class="footer-link" href="#">Credit Note Templates</a></li>
+          <li><a class="footer-link" href="#">Estimate Template</a></li>
+        </ul>
+      </div>
+      <div class="footer-bonsai">
+        <p class="footer-title">BONSAI</p>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">About</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
+          <li><a class="footer-link" href="#">Suport</a></li>
+          <li><a class="footer-link" href="#">LinkedIn</a></li>
+          <li><a class="footer-link" href="#">Twitter</a></li>
+          <li><a class="footer-link" href="#">Privacy policy</a></li>
+          <li><a class="footer-link" href="#">Legal</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#">Affiliates</a></li>
+          <li><a class="footer-link" href="#">Write for Us</a></li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <a class="footer-link" href="#">
+              <span>Comparisons</span>
+              <ion-icon
+                class="footer-icon"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script
       type="module"
